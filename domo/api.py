@@ -7,7 +7,7 @@ from requests_oauthlib import OAuth2Session
 BASE_URL = 'https://api.domo.com'
 AUTH_URI = 'oauth/token?grant_type=client_credentials&scope=data'
 
-class api(object):
+class DomoApi(object):
 
 	def __init__(self, client_id, client_secret, base_url=BASE_URL):
 		self._client_id = client_id
